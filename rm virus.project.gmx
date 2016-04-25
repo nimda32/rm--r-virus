@@ -9,6 +9,7 @@
     <sprite>sprites\spr_player</sprite>
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\spr_icon</sprite>
+    <sprite>sprites\spr_bullet</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_room</background>
@@ -19,6 +20,7 @@
     <object>objects\obj_enemy_spawn</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_icon</object>
+    <object>objects\obj_bullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_room</room>
