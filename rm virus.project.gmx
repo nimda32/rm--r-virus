@@ -5,11 +5,21 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_enemy</sprite>
+    <sprite>sprites\spr_icon</sprite>
+  </sprites>
   <backgrounds name="background">
     <background>background\bg_room</background>
   </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_player</object>
+    <object>objects\obj_enemy_spawn</object>
+    <object>objects\obj_enemy</object>
+    <object>objects\obj_icon</object>
+  </objects>
   <rooms name="rooms">
     <room>rooms\rm_room</room>
   </rooms>
