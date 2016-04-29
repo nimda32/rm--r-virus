@@ -25,16 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x+378, y, obj_wall);
-instance_create(x-378, y, obj_wall);
-instance_create(x-50, y-268, obj_ceiling);
-instance_create(x-50, y+268, obj_ceiling);
+            <string>instance_create(x+578, y-500, obj_wall);
+instance_create(x-578, y-500, obj_wall);
+instance_create(x-500, y-468, obj_ceiling);
+instance_create(x-500, y+468, obj_ceiling);
 
-instance_create(x+328, y, obj_enemy_spawn);
-instance_create(x-328, y, obj_enemy_spawn);
-instance_create(x, y-218, obj_enemy_spawn);
-instance_create(x, y+218, obj_enemy_spawn);
-
+instance_create(x+528, y, obj_enemy_spawn);
+instance_create(x-528, y, obj_enemy_spawn);
+instance_create(x, y-318, obj_enemy_spawn);
+instance_create(x, y+318, obj_enemy_spawn);
+//960
+//512
 
 </string>
           </argument>
