@@ -15,6 +15,7 @@
     <sprite>sprites\spr_wall</sprite>
     <sprite>sprites\spr_p</sprite>
     <sprite>sprites\spr_hour</sprite>
+    <sprite>sprites\spr_hour_sm</sprite>
     <sprite>sprites\spr_shield</sprite>
     <sprite>sprites\sprite10</sprite>
     <sprite>sprites\spr_worm_enter</sprite>
@@ -37,6 +38,9 @@
     <object>objects\obj_control</object>
     <object>objects\obj_enemy_worm_red</object>
     <object>objects\obj_enemy_worm_blue</object>
+    <object>objects\object11</object>
+    <object>objects\obj_shooty</object>
+    <object>objects\obj_enemybullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_room</room>
