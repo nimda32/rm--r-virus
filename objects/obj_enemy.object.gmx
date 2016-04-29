@@ -61,8 +61,6 @@ x+=hspd;
 y+=vspd;
 
 
-
-
 switch (state_chase){
     case e_state.idle:
     {
@@ -74,8 +72,10 @@ switch (state_chase){
     break;
     case e_state.chase:
     {
-        dir = sign(obj_player.x - x);
-        hspd = dir * 2;
+        dirx = sign(obj_player.x - x);
+        diry = sign(obj_player.y - y);
+        hspd = dirx * 2;
+        vspd = diry * 2;
         dist = distance_to_object(obj_player);
         if(dist &gt; 128){
             state_chase = e_state.idle;
@@ -86,8 +86,10 @@ switch (state_chase){
     break;
     case e_state.dash:
     {
-        dir = sign(obj_player.x - x);
-        hspd = dir * 3;
+        dirx = sign(obj_player.x - x);
+        diry = sign(obj_player.y - y);
+        hspd = dirx * 3;
+        vspd = diry * 3;
         dist = distance_to_object(obj_player);
         if(dist &gt; 90){
             state_chase = e_state.idle;
