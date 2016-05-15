@@ -17,6 +17,9 @@
     <sprite>sprites\spr_hour</sprite>
     <sprite>sprites\spr_shield</sprite>
     <sprite>sprites\sprite10</sprite>
+    <sprite>sprites\spr_worm_enter</sprite>
+    <sprite>sprites\spr_worm_moves</sprite>
+    <sprite>sprites\spr_worm_red</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_room</background>
