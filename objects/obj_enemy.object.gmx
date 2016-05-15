@@ -26,9 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>/// Initialize the enemies vars
+<<<<<<< HEAD
 hspd=1;
 vspd=1;
 
+=======
+hspd=0;
+vspd=0;
+spd=4;
+>>>>>>> 1870b584b73c329e2e66e093f1b7ae4c94fef908
 hp = 100;
 
 state_chase = e_state.idle;
@@ -66,7 +72,11 @@ y+=vspd;
 switch (state_chase){
     case e_state.idle:
     {
+<<<<<<< HEAD
         if(distance_to_object(obj_player) &lt; 196)
+=======
+        if(distance_to_object(obj_bunny) &lt; 196)
+>>>>>>> 1870b584b73c329e2e66e093f1b7ae4c94fef908
         {
             state_chase = e_state.chase;
         }
@@ -74,9 +84,15 @@ switch (state_chase){
     break;
     case e_state.chase:
     {
+<<<<<<< HEAD
         dir = sign(obj_player.x - x);
         hspd = dir * 2;
         dist = distance_to_object(obj_player);
+=======
+        dir = sign(obj_bunny.x - x);
+        hspd = dir * 2;
+        dist = distance_to_object(obj_bunny);
+>>>>>>> 1870b584b73c329e2e66e093f1b7ae4c94fef908
         if(dist &gt; 128){
             state_chase = e_state.idle;
         } else if (dist &lt; 50 ){
@@ -86,9 +102,15 @@ switch (state_chase){
     break;
     case e_state.dash:
     {
+<<<<<<< HEAD
         dir = sign(obj_player.x - x);
         hspd = dir * 3;
         dist = distance_to_object(obj_player);
+=======
+        dir = sign(obj_bunny.x - x);
+        hspd = dir * 3;
+        dist = distance_to_object(obj_bunny);
+>>>>>>> 1870b584b73c329e2e66e093f1b7ae4c94fef908
         if(dist &gt; 90){
             state_chase = e_state.idle;
         }
@@ -101,6 +123,7 @@ switch (state_chase){
         </arguments>
       </action>
     </event>
+<<<<<<< HEAD
     <event eventtype="4" ename="obj_player">
       <action>
         <libid>1</libid>
@@ -117,6 +140,8 @@ switch (state_chase){
         <isnot>0</isnot>
       </action>
     </event>
+=======
+>>>>>>> 1870b584b73c329e2e66e093f1b7ae4c94fef908
   </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
