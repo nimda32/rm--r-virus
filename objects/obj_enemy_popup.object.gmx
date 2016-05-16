@@ -50,6 +50,7 @@
             <kind>1</kind>
             <string>if(hp&lt;=0)
 {
+effect_create_below(ef_explosion,x,y,1,c_red);
 instance_destroy();
 }
 </string>
