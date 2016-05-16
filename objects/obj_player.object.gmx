@@ -33,7 +33,7 @@ movespeed = 10;
 hp = 100;
 
 canMove=1;
-delay=10;
+delay=60;
 </string>
           </argument>
         </arguments>
@@ -71,21 +71,21 @@ vspd = movey * movespeed;
 
 
 //move
-if(canMove)
-{
+
+
 x += hspd;
 y += vspd;
-}
-else
+
+if(movespeed ==0)
 {
-    if(delay &gt;0)
+    if(delay &gt; 0)
     {
-    delay--;
+    delay--
     }
     else
     {
-    delay = 10;
-    canMove=1;
+    movespeed = 10;
+    delay =60;
     }
 }
 
@@ -94,6 +94,52 @@ image_angle=point_direction(x,y,mouse_x,mouse_y);
 if(hp==0)
 room_restart();
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_enemybullet">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>movespeed =0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_shooty">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hp-=10;
 </string>
           </argument>
         </arguments>
@@ -121,29 +167,6 @@ room_restart();
 hp-=10;
 
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_enemybullet">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>canMove=0;
 </string>
           </argument>
         </arguments>
