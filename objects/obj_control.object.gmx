@@ -25,14 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.killCount &lt; 100 &amp;&amp; room &gt; 0){
-draw_text(view_xview+10, view_yview+10, "Kill Count: " + string(global.killCount));
-}else{
-    draw_text(view_xview+50, view_yview+50, "YOU DID IT!");
+            <string>if (room &gt; 0)
+{
+    if(global.killCount &lt; 100)
+    {
+        draw_text(view_xview+10, view_yview+10, "Kill Count: " + string(global.killCount));
+    }
+    else
+    {
+        draw_text(view_xview+50, view_yview+50, "YOU DID IT!");
+    }
+    draw_text(view_xview+370, view_yview+30, "HP ");
 }
-
-
-draw_text(view_xview+370, view_yview+30, "HP ");
 </string>
           </argument>
         </arguments>
