@@ -52,13 +52,19 @@ hp = 100;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>i_a = tan(y-obj_player.y / x-obj_player.x)
-
-if (frames % 60 == 0)
-{
+            <string>if (frames % 180 == 0)
+{   
     var obj;
     obj = instance_create(x,y,obj_enemybullet);
-    with (obj) motion_set(point_direction(x,y,obj_player.x,obj_player.y),5);
+    with (obj) motion_set(point_direction(x,y,obj_player.x,obj_player.y),3);
+    
+    var obj1;
+    obj = instance_create(x+25,y+25,obj_enemybullet);
+    with (obj) motion_set(point_direction(x+25,y+25,obj_player.x,obj_player.y),3);
+    
+    var obj2;
+    obj = instance_create(x-25,y-25,obj_enemybullet);
+    with (obj) motion_set(point_direction(x-25,y-25,obj_player.x,obj_player.y),3);
     
     
     frames = 1;
