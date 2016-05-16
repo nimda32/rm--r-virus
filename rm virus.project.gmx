@@ -8,6 +8,7 @@
     <sound>sound\sound_intro</sound>
     <sound>sound\sound_lvl2</sound>
     <sound>sound\sound_lvl1</sound>
+    <sound>sound\sound_blue_screen</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_player</sprite>

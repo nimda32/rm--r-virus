@@ -39,6 +39,11 @@ else if (room == 2)
    audio_stop_all();
    audio_play_sound(sound_lvl2, 0, true);
 }
+else if (room == 3)
+{
+    audio_stop_all();
+    audio_play_sound(sound_blue_screen, 0, false);
+}
 </string>
           </argument>
         </arguments>
