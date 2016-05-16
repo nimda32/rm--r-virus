@@ -32,6 +32,7 @@ image_speed = 0.20;
 hp = 100;
 
 state_chase = e_state.idle;
+no_movement = true;
 
 </string>
           </argument>
@@ -56,16 +57,17 @@ state_chase = e_state.idle;
           <argument>
             <kind>1</kind>
             <string>//enemy movement and dash towards player when close enough
+if (sprite_index != spr_worm_enter)
+{
+    x+=hspd;
+    y+=vspd;
+}
 
-x+=hspd;
-y+=vspd;
-
-if (image_index &gt; image_number - 1)
+if (image_index &gt; image_number - 1 &amp;&amp; sprite_index == spr_worm_enter)
 {
     sprite_index = spr_worm_red;
     image_speed = 0.02;
 }
-
 
 switch (state_chase){
     case e_state.idle:
