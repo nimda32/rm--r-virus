@@ -55,9 +55,9 @@
     <object>objects\obj_sound_control</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room2</room>
     <room>rooms\room_intro</room>
     <room>rooms\room1</room>
+    <room>rooms\room2</room>
     <room>rooms\room_win</room>
   </rooms>
   <help>
