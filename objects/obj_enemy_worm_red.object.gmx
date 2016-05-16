@@ -72,7 +72,7 @@ if (image_index &gt; image_number - 1 &amp;&amp; sprite_index == spr_worm_enter)
 switch (state_chase){
     case e_state.idle:
     {
-        if(distance_to_object(obj_player) &lt; 196)
+        if(distance_to_object(obj_player) &lt; 400)
         {
             state_chase = e_state.chase;
         }
