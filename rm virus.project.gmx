@@ -21,6 +21,7 @@
     <sprite>sprites\spr_worm_enter</sprite>
     <sprite>sprites\spr_worm_moves</sprite>
     <sprite>sprites\spr_worm_red</sprite>
+    <sprite>sprites\spr_enemy_popup</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_room</background>
@@ -41,6 +42,7 @@
     <object>objects\object11</object>
     <object>objects\obj_shooty</object>
     <object>objects\obj_enemybullet</object>
+    <object>objects\obj_enemy_popup</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_room</room>
