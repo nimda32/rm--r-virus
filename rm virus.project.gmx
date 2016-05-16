@@ -35,6 +35,8 @@
     <object>objects\obj_lvl1</object>
     <object>objects\obj_ceiling</object>
     <object>objects\obj_control</object>
+    <object>objects\obj_enemy_worm_red</object>
+    <object>objects\obj_enemy_worm_blue</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_room</room>
