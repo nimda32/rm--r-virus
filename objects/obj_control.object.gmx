@@ -8,6 +8,29 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_color(c_white);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -86,7 +109,7 @@ room_goto(room_intro);
             <kind>1</kind>
             <string>if(global.killCount &lt; 50 &amp;&amp; room == 1)
 {
-    draw_text(view_xview+10, view_yview+10, "Kill Count: " + string(global.killCount));
+    draw_text_transformed(view_xview+700, view_yview+130, "Kill Count: " + string(global.killCount),4,4,0);
 }
 else if(global.killCount &lt; 75 &amp;&amp; room == 2)
 {
@@ -94,9 +117,9 @@ else if(global.killCount &lt; 75 &amp;&amp; room == 2)
 }
 else
 {
-    draw_text(view_xview+50, view_yview+50, "YOU DID IT!");
+ //   draw_text(view_xview+50, view_yview+50, "YOU DID IT!");
 }
-draw_text(view_xview+370, view_yview+30, "HP ");
+draw_text(view_xview+870, view_yview+30, "HP ");
 </string>
           </argument>
         </arguments>
