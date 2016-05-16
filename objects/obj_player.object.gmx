@@ -121,6 +121,7 @@ room_restart();
             <kind>1</kind>
             <string>movespeed =0;
 hp-=1;
+delay=30;
 </string>
           </argument>
         </arguments>
