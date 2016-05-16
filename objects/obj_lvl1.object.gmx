@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(x+578, y-500, obj_wall);
-instance_create(x-878, y-500, obj_wall);
+            <string>instance_create(x+678, y-500, obj_wall);
+instance_create(x-678, y-500, obj_wall);
 instance_create(x-500, y-468, obj_ceiling);
 instance_create(x-500, y+468, obj_ceiling);
 

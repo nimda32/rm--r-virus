@@ -23,6 +23,7 @@
     <sprite>sprites\spr_worm_red</sprite>
     <sprite>sprites\spr_enemy_popup</sprite>
     <sprite>sprites\spr_lvl2</sprite>
+    <sprite>sprites\spr_intro</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_room</background>
@@ -46,10 +47,12 @@
     <object>objects\obj_enemy_popup</object>
     <object>objects\obj_lvl2</object>
     <object>objects\obj_enemy_spawn_lvl2</object>
+    <object>objects\obj_intro</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room2</room>
+    <room>rooms\room_intro</room>
     <room>rooms\room1</room>
+    <room>rooms\room2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
