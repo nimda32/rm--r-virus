@@ -7,7 +7,119 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Initialize the enemies vars
+hspd=1;
+vspd=1;
+
+hp = 100;
+
+state_chase = e_state.idle;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//enemy movement and dash towards player when close enough
+
+x+=hspd;
+y+=vspd;
+
+
+switch (state_chase){
+    case e_state.idle:
+    {
+        if(distance_to_object(obj_player) &lt; 196)
+        {
+            state_chase = e_state.chase;
+        }
+    }
+    break;
+    case e_state.chase:
+    {
+        dirx = sign(obj_player.x - x);
+        diry = sign(obj_player.y - y);
+        hspd = dirx * 4;
+        vspd = diry * 2;
+        dist = distance_to_object(obj_player);
+        if(dist &gt; 128){
+            state_chase = e_state.idle;
+        } else if (dist &lt; 50 ){
+            state_chase = e_state.dash;
+        }
+    }
+    break;
+    case e_state.dash:
+    {
+        dirx = sign(obj_player.x - x);
+        diry = sign(obj_player.y - y);
+        hspd = dirx * 5;
+        vspd = diry * 3;
+        dist = distance_to_object(obj_player);
+        if(dist &gt; 90){
+            state_chase = e_state.idle;
+        }
+    }
+    break;
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_player">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
