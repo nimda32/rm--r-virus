@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.killCount = 0;
-
+frames = 1;
 vspd = 0;
 hspd = 0;
 movespeed = 10;
@@ -109,7 +109,7 @@ hp-=10;
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="53">
+    <event eventtype="6" enumb="50">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -126,10 +126,18 @@ hp-=10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>bullet = instance_create(x + lengthdir_x(16, image_angle),y + lengthdir_y(16, image_angle), obj_bullet);
-bullet.speed = bullet.bullet_speed;
-bullet.direction = image_angle;
-bullet.image_angle = image_angle;
+            <string>if (frames % 10 == 0)
+{
+    bullet = instance_create(x + lengthdir_x(16, image_angle),y + lengthdir_y(16, image_angle), obj_bullet);
+    bullet.speed = bullet.bullet_speed;
+    bullet.direction = image_angle;
+    bullet.image_angle = image_angle;
+    frames = 1;
+}
+else
+{
+    frames++;
+}
 </string>
           </argument>
         </arguments>
