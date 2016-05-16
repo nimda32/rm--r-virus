@@ -27,10 +27,12 @@
             <kind>1</kind>
             <string>if (room == 1 &amp;&amp; global.killCount &gt;= 50)
 {
+    global.killCount=0;
     room_goto_next();
 }
 else if (room == 2 &amp;&amp; global.killCount &gt;= 75)
 {
+    global.killCount=0;
     room_goto(room_intro);
 }
 </string>
