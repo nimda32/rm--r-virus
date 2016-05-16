@@ -31,6 +31,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_room</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -57,6 +58,7 @@
     <room>rooms\room2</room>
     <room>rooms\room_intro</room>
     <room>rooms\room1</room>
+    <room>rooms\room_win</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
