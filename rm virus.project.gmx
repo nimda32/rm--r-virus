@@ -50,7 +50,6 @@
     <object>objects\obj_enemybullet</object>
     <object>objects\obj_enemy_popup</object>
     <object>objects\obj_lvl2</object>
-    <object>objects\obj_enemy_spawn_lvl2</object>
     <object>objects\obj_intro</object>
     <object>objects\obj_sound_control</object>
   </objects>
