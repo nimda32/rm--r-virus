@@ -22,6 +22,7 @@
     <sprite>sprites\spr_worm_moves</sprite>
     <sprite>sprites\spr_worm_red</sprite>
     <sprite>sprites\spr_enemy_popup</sprite>
+    <sprite>sprites\sprite16</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_room</background>
