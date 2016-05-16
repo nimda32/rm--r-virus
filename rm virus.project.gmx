@@ -18,12 +18,10 @@
     <sprite>sprites\spr_hour_a</sprite>
     <sprite>sprites\spr_hour_sm</sprite>
     <sprite>sprites\spr_shield</sprite>
-    <sprite>sprites\sprite10</sprite>
     <sprite>sprites\spr_worm_enter</sprite>
     <sprite>sprites\spr_worm_moves</sprite>
     <sprite>sprites\spr_worm_red</sprite>
     <sprite>sprites\spr_enemy_popup</sprite>
-    <sprite>sprites\sprite16</sprite>
     <sprite>sprites\spr_lvl2</sprite>
   </sprites>
   <backgrounds name="background">
@@ -43,15 +41,15 @@
     <object>objects\obj_control</object>
     <object>objects\obj_enemy_worm_red</object>
     <object>objects\obj_enemy_worm_blue</object>
-    <object>objects\object11</object>
     <object>objects\obj_shooty</object>
     <object>objects\obj_enemybullet</object>
     <object>objects\obj_enemy_popup</object>
     <object>objects\obj_lvl2</object>
+    <object>objects\obj_enemy_spawn_lvl2</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
     <room>rooms\room2</room>
+    <room>rooms\room1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
