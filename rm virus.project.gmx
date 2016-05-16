@@ -33,6 +33,7 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_enemy_spawn</object>
+    <object>objects\obj_enemy_spawnLv2</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_icon</object>
     <object>objects\obj_bullet</object>
