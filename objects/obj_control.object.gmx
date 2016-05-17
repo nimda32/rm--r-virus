@@ -31,7 +31,7 @@
 }
 else if(global.killCount &lt; 75 &amp;&amp; room == 2)
 {
-    draw_text_transformed(view_xview+700, view_yview+130, "Kill Count: " + string(global.killCount),4,4,0);
+    draw_text_transformed(view_xview+700, view_yview+100, "Kill Count: " + string(global.killCount),4,4,0);
 }
 else
 {
@@ -125,7 +125,7 @@ room_goto(room_intro);
 }
 else if(global.killCount &lt; 75 &amp;&amp; room == 2)
 {
-    draw_text(view_xview+10, view_yview+10, "Kill Count: " + string(global.killCount));
+    draw_text_transformed(view_xview+700, view_yview+50, "Kill Count: " + string(global.killCount),4,4,0);
 }
 else
 {
