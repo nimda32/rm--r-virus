@@ -25,7 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_color(c_white);
+            <string>if(global.killCount &lt; 50 &amp;&amp; room == 1)
+{
+    draw_text_transformed(view_xview+700, view_yview+130, "Kill Count: " + string(global.killCount),4,4,0);
+}
+else if(global.killCount &lt; 75 &amp;&amp; room == 2)
+{
+    draw_text_transformed(view_xview+700, view_yview+130, "Kill Count: " + string(global.killCount),4,4,0);
+}
+else
+{
+ //   draw_text(view_xview+50, view_yview+50, "YOU DID IT!");
+}
+draw_text(view_xview+870, view_yview+30, "HP ");
 </string>
           </argument>
         </arguments>
